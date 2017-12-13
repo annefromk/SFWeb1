@@ -11,8 +11,11 @@
 </head>
 <body>
   <section id="main-title">
-    <h1>서울시, 성범죄로부터 안전한가</h1>
-    <p>당신의 인적사항을 선택해주세요.</p>
+    <h1>대한민국에 사는 우리들, 성범죄로부터 안전한가?</h1>
+    <p>당신의 인적 사항 정보를 알려주세요.<br>
+      입력된 정보와 일치하는 <u>최근 2년간 일어난 성폭력 피해자</u> 숫자를 공개합니다.<br>
+    </p>
+    <h6>2014~2015년 전국 성폭력 피해자 성별/연령 현황[데이터출처: 대검찰청]</h6>
   </section>
 
   <section id="question-container">
@@ -41,7 +44,7 @@
           <span class="navi-none-gender">성별</span> ➡ <span class="navi-current">연령</span>
         </div>
       </div>
-      <div class="image-selector">
+      <div class="image-selector-age">
         <div class="selector-item" qtype="age" value="6세 이하">
           <img src="./img/20_selected.png" alt="">
           <p>6세 이하</p>
@@ -87,11 +90,13 @@
       나는 <span id="gender-bc" class="breadcomb">성별</span> <span id="age-bc" class="breadcomb">연령</span> 입니다.
     </div>
     <div id="result-summary">
-      "당신과 같은 조건의 피해자는 <span id="victim">8780</span>명입니다"
+      "당신과 같은 조건의 피해자는 <span id="victim">30463</span>명입니다"
     </div>
   </section>
+
   <section id="more">
-    최근 3년간 성폭력 피해자 통계 <a href="#">더 알아보기</a>
+    최근 2년간(2014-2015년) 성폭력 피해자 상세 통계 <a href="more.html">더 알아보기</a>
   </section>
+
   <script src="./script.js"></script>
 </body>

@@ -1,0 +1,104 @@
+<<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="Description" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title><더알아보기>성폭력 피해자 상세 통계</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="chart_div"></div>
+  <script type="text/javascript">
+  google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawbarsituation);
+  google.charts.setOnLoadCallback(drawbarrelationship);
+  <!--연령대별 성폭력 피해자수-->
+
+  <!--성폭력 피해자 피해시 상황-->
+      function drawbarsituation() {
+
+            var data = google.visualization.arrayToDataTable([
+              ['상황', '건수'],
+              ['취침중', 2925],
+              ['일하는중', 1862],
+              ['부재중', 16],
+              ['담화중', 4025],
+              ['혼잡중', 1953],
+              ['보행중', 3865],
+              ['딴 데 정신 잃어서 ', 1234],
+              ['속아서 ', 487]
+            ]);
+
+            var options = {
+              title: '성폭력 피해자 피해시 상황',
+              chartArea: {width: '35%'},
+              hAxis: {
+                title: '건수',
+                minValue: 0
+              },
+              vAxis: {
+                title: '상황'
+              }
+            };
+
+            var chart = new google.visualization.BarChart(document.getElementById('bar_situation'));
+            chart.draw(data, options);
+          }
+
+        <!--가해자와 피해자 관계-->
+        function drawbarrelationship() {
+
+              var data = google.visualization.arrayToDataTable([
+                ['상황', '건수'],
+                ['국가', 9],
+                ['공무원', 18],
+                ['고용자', 173],
+                ['피고용자', 289],
+                ['직장동료', 718],
+                ['친구', 760],
+                ['애인', 744],
+                ['동거친족', 457],
+                ['기타친족', 203],
+                ['거래상대방', 193],
+                ['이웃', 621],
+                ['지인', 1767],
+                ['타인', 15485],
+              ]);
+
+              var options = {
+                title: '가해자와 피해자 관계',
+                chartArea: {width: '35%'},
+                hAxis: {
+                  title: '건수',
+                  minValue: 0
+                },
+                vAxis: {
+                  title: '상황'
+                }
+              };
+
+              var chart = new google.visualization.BarChart(document.getElementById('bar_relationship'));
+
+              chart.draw(data, options);
+            }
+
+
+</script>
+</head>
+<body>
+  <section>
+
+
+  </section>
+
+  <table class="columns">
+   <tr>
+     <td><div id="bar_situation" style="width: 700px; height: 350px; border: 1px solid #ccc"></div></td>
+     <td><div id="bar_relationship" style="width: 700px; height: 350px; border: 1px solid #ccc"></div></td>
+   </tr>
+ </table>
+
+
+</body>

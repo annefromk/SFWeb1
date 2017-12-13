@@ -11,7 +11,7 @@ section {
 }
 
 #question-container {
-  min-height: 300px;
+  min-height: 100px;
 }
 
 .question {
@@ -50,6 +50,17 @@ section {
 .image-selector {
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  padding-left:620px;
+  padding-right:300px;
+
+}
+.image-selector-age {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-left:450px;
+  padding-right:400px;
 }
 
 #result-container {
