@@ -1,0 +1,16 @@
+#back {
+  position: fixed;
+  text-align: center;
+  background-color: skyblue;
+  bottom: 0;
+  width: 100%;
+}
+
+#page{
+  background: #fff;
+  text-align: center;
+}
+
+.columns {
+  margin: auto;
+}

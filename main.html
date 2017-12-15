@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Description" content="Description" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>main</title>
+
+<style>
+  .title {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        -webkit-animation-name: tada; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: tada;
+        animation-duration: 4s;
+    }
+
+    @-webkit-keyframes tada {
+      0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+      }
+
+      10%, 20% {
+        -webkit-transform: scale(0.9) rotate(-3deg);
+        transform: scale(0.9) rotate(-3deg);
+      }
+
+      30%, 50%, 70%, 90% {
+        -webkit-transform: scale(1.1) rotate(3deg);
+        transform: scale(1.1) rotate(3deg);
+      }
+
+      40%, 60%, 80% {
+        -webkit-transform: scale(1.1) rotate(-3deg);
+        transform: scale(1.1) rotate(-3deg);
+      }
+
+      100% {
+        -webkit-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+      }
+    }
+
+    @keyframes tada {
+      0% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+      }
+
+      10%, 20% {
+        -webkit-transform: scale(0.9) rotate(-3deg);
+        -ms-transform: scale(0.9) rotate(-3deg);
+        transform: scale(0.9) rotate(-3deg);
+      }
+
+      30%, 50%, 70%, 90% {
+        -webkit-transform: scale(1.1) rotate(3deg);
+        -ms-transform: scale(1.1) rotate(3deg);
+        transform: scale(1.1) rotate(3deg);
+      }
+
+      40%, 60%, 80% {
+        -webkit-transform: scale(1.1) rotate(-3deg);
+        -ms-transform: scale(1.1) rotate(-3deg);
+        transform: scale(1.1) rotate(-3deg);
+      }
+
+      100% {
+        -webkit-transform: scale(1) rotate(0);
+        -ms-transform: scale(1) rotate(0);
+        transform: scale(1) rotate(0);
+      }
+    }
+
+.teamname {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  -webkit-animation-name: fadeIn; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+
+
+<body>
+<div>
+<h1 class="teamname">SAFETY FIRST</h1><br>
+<p class="title">
+  서울시, 성범죄로부터 안전한가?<br></p>
+</div>
+</body>
+</html>
